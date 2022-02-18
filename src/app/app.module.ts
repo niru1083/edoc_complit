@@ -9,12 +9,17 @@ import { ApiService } from './api.service';
 import { CookieService } from './cookie.service';
 import { LoginComponent } from './login/login.component';
 import { DashbordComponent } from './admin/dashbord/dashbord.component';
+import { HeaderComponent } from './admin/header/header.component';
+import { FooterComponent } from './admin/footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashbordComponent
+    DashbordComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

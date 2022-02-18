@@ -5,20 +5,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+
+  id="0";
   baseurl = "http://localhost:8081/";
 
   constructor(private http:HttpClient) { }
 
   post=(api:string,data:any)=>{
-    this.http.post(this.baseurl+api,data).subscribe(reply=>{
-      return (reply)
-    })
+    return this.http.post(this.baseurl+api,data);
 
   }
   get=(api:string,data:any)=>{
-    this.http.post(this.baseurl+api,data).subscribe(reply=>{
-      return (reply)
-    })
+    return this.http.post(this.baseurl+api,data);
+
 
   }
 }
